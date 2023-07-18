@@ -9,7 +9,9 @@
 /* nav */
 header {
     background-color: white;
-    padding: 40px 240px;
+    padding: 40px 240px ;
+    /* max-width: 1920px; */
+
 }
 
 nav {
@@ -52,25 +54,33 @@ nav li {
 nav li>a {
     text-decoration: none;
 }
-.about-us{
+
+.about-us {
     display: flex;
-    display: flex;
-    width: 262px;
-    height: 56px;
     border-radius: 8px;
     background: white;
     align-items: center;
     padding-left: 1px;
     margin-bottom: 20px;
 }
+
 .follow-us {
     display: flex;
-    width: 280px;
-    height: 56px;
     justify-content: space-between;
+    height: 56px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     align-items: center;
     padding-left: 15px;
     margin-bottom: 20px;
 }
+/* main */
+.banner{
+    display: flex;
+}
+.about{
+    margin-top: 200px;
+    width: 50%;
+}
+
+
