@@ -4,3 +4,73 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
+
+/* body */
+/* nav */
+header {
+    background-color: white;
+    padding: 40px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #0B0223;
+    margin-top: 18px;
+}
+
+.nav-img-one {
+    width: 86px;
+    height: 40px;
+    margin-top: 23px;
+}
+
+.nav-div-one {
+    display: flex;
+    gap: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    font-size: 1.12rem;
+    font-weight: 500;
+    margin-right: 30px;
+    padding-top: 2px;
+}
+
+nav li>a {
+    text-decoration: none;
+}
+.about-us{
+    display: flex;
+    display: flex;
+    width: 262px;
+    height: 56px;
+    border-radius: 8px;
+    background: white;
+    align-items: center;
+    padding-left: 1px;
+    margin-bottom: 20px;
+}
+.follow-us {
+    display: flex;
+    width: 280px;
+    height: 56px;
+    justify-content: space-between;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
