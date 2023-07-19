@@ -84,7 +84,7 @@ nav li>a {
 
 .about {
     padding-top: 150px;
-   padding-left: 240px; 
+    padding-left: 240px;
     align-items: center;
     width: 900px;
     height: 700px;
@@ -192,17 +192,214 @@ nav li>a {
 }
 
 .online-image-container {
-    max-width: 1920px;
     gap: 0px;
     margin: 0px 300px;
     justify-content: space-evenly;
     padding-right: 20px;
 }
 
+/* instant content */
+.instant {
+    display: flex;
+    align-items: center;
+    margin: 40px 240px;
+}
+
+.instant-content {
+    text-align: right;
+}
+
+.instant-title {
+    text-align: right;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #0B0223;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.instant-des {
+    padding-left: 180px;
+    width: 353px;
+    color: #534C64;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.instant-img-container {
+    padding-left: 220px;
+    padding-top: 150px;
+    margin-right: 240px;
+}
+
+.instant-image {
+    width: 318.5px;
+    height: 365.083px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 10px solid #FFF;
+    background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repeat;
+    position: relative;
+    bottom: 250px;
+    right: 150px;
+}
+
+/* game icons div */
+.icons {
+    background: rgb(247, 239, 247);
+    display: grid;
+    gap: 20px;
+    max-width: 1920px;
+}
+
+.icon-row-one {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 120px 230px 0px 240px;
+}
+
+.icon-row-two {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 280px 120px 300px;
+}
+
+.box {
+    display: flex;
+    width: 280px;
+    height: 62px;
+    justify-content: space-around;
+    /* padding-right: 30px; */
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FFF;
+}
+
+.box-row-two {
+    display: flex;
+    width: 300px;
+    height: 62px;
+    justify-content: space-around;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FFF;
+}
+
+/* .icon-row-one{
+    display: flex;
+    gap: 30px;
+    padding: 120px 280px 50px 280px;
+    justify-content: space-around;
+}
+.icon-row-two{
+    display: flex;
+    gap: 30px;
+    padding: 0px 280px 120px 280px;
+    justify-content: space-around;
+} */
+.box-des {
+    text-align: left;
+    justify-content: center;
+    color: #0B0223;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+.box-img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    justify-content: flex-start;
+}
+
+/* footer */
+.footer {
+    max-width: 1920px;
+    /* margin: 0px auto; */
+    background-color: #0B0223;
+    align-items: center;
+}
+
+.footer-div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 830px;
+    padding-top: 125px;
+}
+
+.foot-title {
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #0B0223;
+}
+
+.footer>ul>li>a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+}
+.footer>ul{
+    display: flex;
+    list-style: none;
+    gap: 3.75rem;
+    text-decoration: none;
+    padding-left: 535px;
+}
+
+.social-icons>ul {
+    display: flex;
+    gap: 2.5rem;
+    padding-left: 730px;
+    padding-top: 50px;
+}
+
+.footer-policy>ul>li>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.footer-policy>ul {
+    display: flex;
+    gap: 3.75rem;
+    padding-left: 610px;
+    padding-top: 60px;
+}
+
+.footer-des {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    padding-bottom: 130px;
+    padding-top: 30px;
+}
+
 /* media queries */
 @media screen and (max-width:576px) {
     header {
         padding-left: 180px;
+    }
+
+    main {
+        padding: 20px;
     }
 
     nav {
@@ -228,18 +425,21 @@ nav li>a {
     .banner {
         flex-direction: column-reverse;
     }
-    .about-img{
+
+    .about-img {
         width: 100%;
         padding: 10px;
     }
+
     .online-image-container {
         flex-direction: column;
     }
-    .about{
-         padding-right: 240px;
-         width: 20px;
+
+    .about {
+        padding-right: 240px;
     }
-    .online-title{
+
+    .online-title {
         margin-right: 200px;
     }
 }
