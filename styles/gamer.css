@@ -149,10 +149,10 @@ nav li>a {
     padding: 0px 240px;
 }
 
-.online-image-container {
+/* .online-image-container {
     gap: 50px;
     display: flex;
-}
+} */
 
 .online-content {
     text-align: center;
@@ -192,11 +192,13 @@ nav li>a {
 }
 
 .online-image-container {
-    gap: 0px;
+    gap: 1.25rem;
     margin: 0px 300px;
     justify-content: space-evenly;
-    padding-right: 20px;
+    padding-right: 20px; 
+    display: flex;
 }
+
 
 /* instant content */
 .instant {
@@ -351,7 +353,8 @@ nav li>a {
     font-style: normal;
     font-weight: 600;
 }
-.footer>ul{
+
+.footer>ul {
     display: flex;
     list-style: none;
     gap: 3.75rem;
@@ -390,6 +393,30 @@ nav li>a {
     font-weight: 500;
     padding-bottom: 130px;
     padding-top: 30px;
+}
+
+/* hover */
+.box:hover {
+    border: 1px solid palevioletred;
+    cursor: pointer;
+    
+}
+.box-des:hover{
+    color: palevioletred;
+}
+.box-row-two:hover {
+    border: 1px solid palevioletred;
+    cursor: pointer;
+    color: palevioletred;
+}
+
+.image-container:hover {
+    border: 5px solid palevioletred;
+    cursor: pointer;
+    width: 342px;
+    height: 400px;
+    border-radius: 1rem;
+
 }
 
 /* media queries */
@@ -438,8 +465,55 @@ nav li>a {
     .about {
         padding-right: 240px;
     }
-
-    .online-title {
-        margin-right: 200px;
+    .online-container{
+        width: 200px;
+        padding: 5px 20px 0px 20px;
     }
+    .online-title{
+        width: 300px;
+        margin-right: 200px;
+        text-align: center;
+        align-items: center;
+    }
+    .online-des{
+        padding-left: 100px;
+    }
+    .online-images{
+        padding-left: 0px;
+    }
+    .online-image-container{
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    .instant{
+        flex-direction: column-reverse;
+    }
+    .instant-img-container{
+        width: 500px;
+        align-items: center;
+        padding-left: 100px;
+    }
+    .instant-content{
+        align-items: center;
+        padding-left: 0px;
+        
+    }
+    .instant-title{
+        text-align: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+    .instant-des{
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+    .icons-row-one{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+    }
+
 }
